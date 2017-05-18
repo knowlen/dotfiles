@@ -7,6 +7,7 @@ set showmatch
 set background=dark
 set nobackup
 set nowb
+set nowrap
 set noswapfile
 set expandtab
 set smarttab
