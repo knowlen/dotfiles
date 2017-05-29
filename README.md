@@ -7,9 +7,9 @@ My personal Bash configs (I spend way too much time on these)
 
 ##### Cool stuff
 ###### **Send commands to all panes:** alt+f (toggle on and off)  
-**Send a command to current + last active pane:** alt+r  
-**Session cycling:** alt+{q,e}  
-    _Allows you to have multiple independent terminal workspaces without having to alt+tab between 
+###### **Send a command to current + last active pane:** alt+r  
+###### **Session cycling:** alt+{q,e}  
+>   _Allows you to have multiple independent terminal workspaces without having to alt+tab between 
      every application when navigating between them. Eg; 
      start a tmux session, detatch with ctrl+b, d. Then start a new
      tmux session, this command allows for quick cycling between the sessions._
