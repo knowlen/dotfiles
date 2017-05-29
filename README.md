@@ -12,7 +12,7 @@ My personal Bash configs (I spend way too much time on these)
 >   Allows you to have multiple independent terminal workspaces without having to alt+tab between 
      every application when navigating between them. Eg; 
      start a tmux session, detatch with ctrl+b, d. Then start a new
-     tmux session, this command allows for quick cycling between the sessions.
+     tmux session, switch between them quickly with alt+q or alt+e.
 
 ##### General re-binds
 > **Pane resize:** alt+{up,down,left,right}  
