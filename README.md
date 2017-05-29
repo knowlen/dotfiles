@@ -14,7 +14,7 @@ My personal Bash configs (I spend way too much time on these)
      to both.
 #
 > **Session cycling:** alt+{q,e}  
->>   Allows you to have multiple independent terminal workspaces without having to alt+tab between 
+   Allows you to have multiple independent terminal workspaces without having to alt+tab between 
      every application when navigating between them. Eg; 
      start a tmux session, detatch with ctrl+b, d. Then start a new
      tmux session, switch between them quickly with alt+q or alt+e.
