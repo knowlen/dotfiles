@@ -6,10 +6,10 @@ My personal Bash configs (I spend way too much time on these)
 ![tmux](https://cloud.githubusercontent.com/assets/22798226/23110917/a7294932-f6d9-11e6-9c5f-8e64dceae768.png)
 
 ##### Cool stuff
- **Send commands to all panes:** alt+f (toggle on and off)  
+ **Send commands to all panes:** _alt+f_ (toggle on and off)  
 ![tmux2](https://sanctum.geek.nz/arabesque/wp-content/uploads/2012/08/synchronize-panes.gif)   
- **Send command to current and last selected pane:** alt+r  
- **Session cycling:** alt+{q,e}  
+ **Send command to current and last selected pane:** _alt+r_  
+ **Session cycling:** _alt+{q,e}_  
 >   Allows you to have multiple independent terminal workspaces without having to alt+tab between 
      every application when navigating between them. Eg; 
      start a tmux session, detatch with ctrl+b, d. Then start a new
