@@ -7,7 +7,7 @@ My personal Bash configs (I spend way too much time on these)
 
 ##### Cool stuff
 > **Send commands to all panes:** alt+f (toggle on and off)  
-![tmux2](https://sanctum.geek.nz/arabesque/wp-content/uploads/2012/08/synchronize-panes.gif)   
+>> ![tmux2](https://sanctum.geek.nz/arabesque/wp-content/uploads/2012/08/synchronize-panes.gif)   
  **Send command to current and last selected pane:** alt+r  
  **Session cycling:** alt+{q,e}  
 >>   Allows you to have multiple independent terminal workspaces without having to alt+tab between 
@@ -18,7 +18,7 @@ My personal Bash configs (I spend way too much time on these)
 ##### General re-binds
 > **Pane resize:** alt+{up,down,left,right}  
 **Pane switching:** alt+{w,a,s,d}    
-**Horizontal split:** alt+1  
-**Vertical split:** alt+2  
+**Vertical split:** alt+1  
+**Horizontal split:** alt+2  
 
 
