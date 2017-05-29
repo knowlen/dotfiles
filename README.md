@@ -7,7 +7,8 @@ My personal Bash configs (I spend way too much time on these)
 
 ##### Cool stuff
 ###### **Send commands to all panes:** alt+f (toggle on and off)  
-###### **Send a command to current + last active pane:** alt+r  
+![https://sanctum.geek.nz/arabesque/wp-content/uploads/2012/08/synchronize-panes.gif]
+###### **Send command to current and last selected pane:** alt+r  
 ###### **Session cycling:** alt+{q,e}  
 >   Allows you to have multiple independent terminal workspaces without having to alt+tab between 
      every application when navigating between them. Eg; 
