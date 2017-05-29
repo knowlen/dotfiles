@@ -1,6 +1,6 @@
 # configs
 My personal Bash configs. Low profile, meta keybinds, cyan and grey. Mostly focusing on Tmux, Vim, bash\_profile. I edited the 'nicoulaj' theme in oh-my-zsh, and the .dircolors is my directory color scheme.    
-
+![nicksetup](https://cloud.githubusercontent.com/assets/22798226/26563843/877c6f5e-448d-11e7-99ff-2ca90a80c8b1.png)
 ---
 ### TMUX
 ![tmux](https://cloud.githubusercontent.com/assets/22798226/23110917/a7294932-f6d9-11e6-9c5f-8e64dceae768.png)
