@@ -6,7 +6,7 @@ My personal Bash configs (I spend way too much time on these)
 ![tmux](https://cloud.githubusercontent.com/assets/22798226/23110917/a7294932-f6d9-11e6-9c5f-8e64dceae768.png)
 
 ##### Cool stuff
-**Send commands to all panes:** alt+f (toggle on and off)  
+###### **Send commands to all panes:** alt+f (toggle on and off)  
 **Send a command to current + last active pane:** alt+r  
 **Session cycling:** alt+{q,e}  
     _Allows you to have multiple independent terminal workspaces without having to alt+tab between 
