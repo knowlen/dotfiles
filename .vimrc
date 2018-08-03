@@ -16,51 +16,47 @@ set tabstop=4
 set lbr
 set tw=500
 set si "Smart indent
-set mouse=a
 map <leader>ss :setlocal spell!<cr>
 inoremap <Nul> <C-n>
 colorscheme ron
 autocmd BufWinLeave *.* mkview
 autocmd BufWinEnter *.* silent loadview 
-if has("folding")
-  set foldenable        " enable folding
-  " toggle folds
-  nnoremap <Space> za
-  vnoremap <Space> za
 
-  set foldtext=FoldText()
-  function! FoldText()
-    let l:lpadding = &fdc
-    redir => l:signs
-      execute 'silent sign place buffer='.bufnr('%')
-    redir End
-    let l:lpadding += l:signs =~ 'id=' ? 2 : 0
 
-    if exists("+relativenumber")
-      if (&number)
-        let l:lpadding += max([&numberwidth, strlen(line('$'))]) + 1
-      elseif (&relativenumber)
-        let l:lpadding += max([&numberwidth, strlen(v:foldstart - line('w0')), strlen(line('w$') - v:foldstart), strlen(v:foldstart)]) + 1
-      endif
-    else
-      if (&number)
-        let l:lpadding += max([&numberwidth, strlen(line('$'))]) + 1
-      endif
+
+" Override w motion
+function! MyWMotion()
+    " Save the initial position
+    let initialLine=line('.')
+    " Execute the builtin word motion and get the new position
+    normal! 5w
+    let newLine=line('.')
+
+    " If the line as changed go back to the previous line
+    if initialLine != newLine
+        normal k$
     endif
+endfunction
 
-    " expand tabs
-    let l:start = substitute(getline(v:foldstart), '\t', repeat(' ', &tabstop), 'g')
-    let l:end = substitute(substitute(getline(v:foldend), '\t', repeat(' ', &tabstop), 'g'), '^\s*', '', 'g')
+" Override b motion
+function! MyBMotion()
+    " Save the initial position
+    let initialLine=line('.')
 
-    let l:info = ' (' . (v:foldend - v:foldstart) . ')'
-    let l:infolen = strlen(substitute(l:info, '.', 'x', 'g'))
-    let l:width = winwidth(0) - l:lpadding - l:infolen
+    " Execute the builtin word motion and get the new position
+    normal! 5b
+    let newLine=line('.')
 
-    let l:separator = ' … '
-    let l:separatorlen = strlen(substitute(l:separator, '.', 'x', 'g'))
-    let l:start = strpart(l:start , 0, l:width - strlen(substitute(l:end, '.', 'x', 'g')) - l:separatorlen)
-    let l:text = l:start . ' … ' . l:end
+    " If the line as changed go back to the previous line
+    if initialLine != newLine
+        normal j^
+    endif
+endfunction
 
-    return l:text . repeat(' ', l:width - strlen(substitute(l:text, ".", "x", "g"))) . l:info
-  endfunction
-endif
+
+nnoremap c <c-v>
+nnoremap W 7k 
+nnoremap S 7j 
+nnoremap A :call MyBMotion()<CR> 
+nnoremap D :call MyWMotion()<CR>
+
