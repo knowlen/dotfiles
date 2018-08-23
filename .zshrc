@@ -54,7 +54,6 @@ ZSH_THEME="nicoulaj"
 plugins=(git wd dircycle)
 
 source $ZSH/oh-my-zsh.sh
-alias go_tf=". /home/hutch_research/workspace/knowlen/tf12GPU/bin/activate"
 
 # User configuration
 
